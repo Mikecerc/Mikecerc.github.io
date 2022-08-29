@@ -1,31 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis:300,400,500');
 
 /* thx to salehriaz for the 404 page design*/
-@-moz-keyframes rocket-movement { 100% {-moz-transform: translate(1200px,-600px);} }
-@-webkit-keyframes rocket-movement {100% {-webkit-transform: translate(1200px,-600px); } }
-@keyframes rocket-movement { 100% {transform: translate(1200px,-600px);} }
 @-moz-keyframes spin-earth { 100% { -moz-transform: rotate(-360deg); transition: transform 20s;  } }
 @-webkit-keyframes spin-earth { 100% { -webkit-transform: rotate(-360deg); transition: transform 20s;  } }
 @keyframes spin-earth{ 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); transition: transform 20s; } }
-
-@-moz-keyframes move-astronaut {
-    100% { -moz-transform: translate(-160px, -160px);}
-}
-@-webkit-keyframes move-astronaut {
-    100% { -webkit-transform: translate(-160px, -160px);}
-}
-@keyframes move-astronaut{
-    100% { -webkit-transform: translate(-160px, -160px); transform:translate(-160px, -160px); }
-}
-@-moz-keyframes rotate-astronaut {
-    100% { -moz-transform: rotate(-720deg);}
-}
-@-webkit-keyframes rotate-astronaut {
-    100% { -webkit-transform: rotate(-720deg);}
-}
-@keyframes rotate-astronaut{
-    100% { -webkit-transform: rotate(-720deg); transform:rotate(-720deg); }
-}
 
 @-moz-keyframes glow-star {
     40% { -moz-opacity: 0.3;}
@@ -45,27 +23,28 @@
     transition: ease 200s !important;
     transform: rotate(-3600deg) !important;
 }
-
-html, body{
+html {
+    scrollbar-width: none;
+    overflow-y: scroll;
     margin: 0;
     width: 100%;
-    height: 100%;
     font-family: 'Dosis', sans-serif;
     font-weight: 300;
-    -webkit-user-select: none; /* Safari 3.1+ */
-    -moz-user-select: none; /* Firefox 2+ */
-    -ms-user-select: none; /* IE 10+ */
-    user-select: none; /* Standard syntax */
 }
-
 .bg-purple{
-    background: url(http://salehriaz.com/404Page/img/bg_purple.png);
+    background: url(../images/bg_purple.png);
     background-repeat: repeat-x;
-    background-size: cover;
+    background-size:auto;
     background-position: left top;
-    height: 100%;
     overflow: hidden;
     
+}
+.page {
+ position: relative;   
+ min-height: 98vh;
+}
+.content {
+   padding-bottom: 2.5rem
 }
 
 .custom-navbar{
@@ -79,12 +58,9 @@ html, body{
 }
 
 .navbar-links{
-    display: inline-block;
     float: right;
     margin-right: 15px;
     text-transform: uppercase;
-    
-    
 }
 
 ul {
@@ -120,36 +96,6 @@ li a:hover {
     color: #ffcb39;
 }
 
-.btn-go-home{
-    position: relative;
-    z-index: 200;
-    margin: 15px auto;
-    width: 100px;
-    padding: 10px 15px;
-    border: 1px solid #FFCB39;
-    border-radius: 100px;
-    font-weight: 400;
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    letter-spacing : 2px;
-    font-size: 11px;
-    
-    -webkit-transition: all 0.3s ease-in;
-    -moz-transition: all 0.3s ease-in;
-    -ms-transition: all 0.3s ease-in;
-    -o-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
-}
-
-.btn-go-home:hover{
-    background-color: #FFCB39;
-    color:  white;
-    transform: scale(1.05);
-    box-shadow: 0px 20px 20px rgba(0,0,0,0.1);
-}
-
 .central-body{
 /*    width: 100%;*/
     padding: 17% 5% 10% 5%;
@@ -161,42 +107,16 @@ li a:hover {
     pointer-events: none;
 }
 
-.object_rocket{
-    z-index: 95;
-    position: absolute;
-    transform: translateX(-50px);
-    top: 75%;
-    pointer-events: none;
-    animation: rocket-movement 200s linear infinite both running;
-}
-
-.object_earth{
-    position: absolute;
-    top: 20%;
-    left: 15%;
-    z-index: 90;
-/*    animation: spin-earth 100s infinite linear both;*/
-}
-
-.object_moon{
-    position: absolute;
-    top: 12%;
-    left: 25%;
-/*
-    transform: rotate(0deg);
-    transition: transform ease-in 99999999999s;
-*/
-}
 .object_earth_close{
-    position: absolute;
+    position: fixed;
     top: 31%;
     left: 15%;
-    z-index: 1;
+    z-index: 0;
    animation: spin-earth 400s infinite linear both;
 }
 
 .object_moon_close{
-    position: absolute;
+    position: fixed;
     top: 26%;
     left: 56%;
 /*
@@ -370,7 +290,12 @@ li a:hover {
     background: inherit;
     backdrop-filter: blur(25px);
     margin: 15%;
+    padding-top: 1rem;
     text-align: center;
+    padding-bottom:2rem;
+    margin-bottom: 1.5rem;
+    color: white;
+    font-size: 24px;
   }
 
 
@@ -378,7 +303,7 @@ li a:hover {
   .flex-container {
     flex-wrap: wrap;
     display:flex;
-    height: auto;
+
     align-items: center;
     justify-content: center;
     margin: auto;
@@ -386,8 +311,8 @@ li a:hover {
   }
   .social-footer-icons {
     color: white;
-    font-size: 1.6vw;
-    padding: 1.5vw;
+    font-size: 20px;
+    padding: 15px;
   }
   .social-footer-icons .fa:hover {
     color: #4a4a4a;
@@ -396,45 +321,12 @@ li a:hover {
   
   .bottom-div {
     position: absolute;
-    bottom: 1vw;
+    overflow: hidden;
+    height: auto;
+    bottom: 20px;
     width: 100%;
   }
 
-
-
-
-  .box{
-    position: relative;
-}
-
-.input {
-    padding: 10px;
-    width: 40px;
-    height: 40px;
-    background: none;
-    border: 4px solid white;
-    border-radius: 50px;
-    box-sizing: border-box;
-    font-size: 16px;
-    color: white;
-    outline: none;
-    transition: .5s;
-}
-.box:hover input{
-    width: 350px;
-    background: #3b3640;
-    border-radius: 10px;
-}
-.box i{
-    position: absolute;
-    top: 50%;
-    right: 19px;
-    transform: translate(-50%,-50%);
-    font-size: 16px;
-    color: white;
-    transition: .2s;
-}
-.box:hover i{
-    opacity: 0;
-    z-index: -1;
+a {
+    color: inherit
 }
