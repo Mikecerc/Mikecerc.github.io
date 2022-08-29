@@ -111,7 +111,6 @@ li a:hover {
     position: fixed;
     top: 31%;
     left: 15%;
-    z-index: 1;
    animation: spin-earth 400s infinite linear both;
 }
 
