@@ -6,5 +6,20 @@
 /pages/docs/batteryLog/* /404.html
 /pages/docs/batteryMonitoring/* /404.html
 /pages/docs/discordBots/* /404.html 
-/404.html/* /404
-/index.html/* /404
+/404/* /404
+/index/* /404
+
+*/index.html /
+*/aboutMe.html /pages/aboutme.html
+*/projects.html /pages/projects.html
+*/batteryLog.html /pages/docs/batteryLog.html
+*/batteryMonitoring.html /pages/docs/batteryMonitoring.html
+*/discordBots.html /pages/docs/discordBots.html
+
+*/batteryLog /pages/construction.html
+*/batteryMonitoring /pages/construction.html
+*/discordBots /pages/construction.html
+*/contact /pages/construction.html
+*/projects /pages/construction.html
+*/resume /pages/construction.html
+
