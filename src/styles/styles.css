@@ -24,7 +24,7 @@
     transform: rotate(-3600deg) !important;
 }
 html {
-    scrollbar-width: 0;
+    scrollbar-width: none;
     overflow-y: scroll; 
     margin: 0;
     width: 100%;
