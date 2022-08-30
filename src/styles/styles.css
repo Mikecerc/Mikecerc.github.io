@@ -24,7 +24,7 @@
     transform: rotate(-3600deg) !important;
 }
 html {
-    scrollbar-width: 200;
+    scrollbar-width: 0;
     overflow-y: scroll; 
     margin: 0;
     width: 100%;
@@ -37,7 +37,6 @@ html {
     background-size:auto;
     background-position: left top;
     overflow: hidden;
-    
 }
 .page {
  position: relative;   
