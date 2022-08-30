@@ -10,11 +10,11 @@
 /index/* /404
 
 */index.html /
-*/aboutMe.html /pages/aboutme.html
-*/projects.html /pages/projects.html
-*/batteryLog.html /pages/docs/batteryLog.html
-*/batteryMonitoring.html /pages/docs/batteryMonitoring.html
-*/discordBots.html /pages/docs/discordBots.html
+*/aboutMe.html /pages/aboutme
+*/projects.html /pages/projects
+*/batteryLog.html /pages/docs/batteryLog
+*/batteryMonitoring.html /pages/docs/batteryMonitoring
+*/discordBots.html /pages/docs/discordBots
 
 */batteryLog /pages/construction.html
 */batteryMonitoring /pages/construction.html
