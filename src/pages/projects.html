@@ -2,7 +2,7 @@
 <html lang="en-US">
     <head>
         <meta charset="utf-8" />
-        <script src="./index.js"></script>
+        <script src="../js/index.js"></script>
         <title>My Projects</title>
         <link rel="stylesheet" href="../styles/styles.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -36,6 +36,22 @@
                         </ul>
                     </div>
                 </div>
+                <div class="card">
+                    <h1 class="projects-header">Projects</h1>
+                    <div class="flex-container">
+                            <div class="project-spacer"></div>
+                            <div><button class="project-button project-button-selected" onclick="return switchPage('1')" id="project-batteryLog" type="button">Digital Battery Log</button></div>
+                            <div><button class="project-button project-button-deselected" onclick="return switchPage('2')" id="project-batteryMonitoring" type="button">Battery Monitoring</button></div>
+                            <div><button class="project-button project-button-deselected" onclick="return switchPage('3')" id="project-discordBots" type="button">Discord bots</button></div>
+                            <div><button class="project-button project-button-deselected" onclick="return switchPage('4')" id="project-fireworks" type="button">Electronic fireworks display</button></div>
+                            <div class="project-spacer"></div>
+                    </div>
+                    <div id="batteryLog" style="display: block;"><p>stuff 1</p></div>
+                    <div id="batteryMonitoring" style="display: none;"><p>stuff 2</p></div>
+                    <div id="discordBots" style="display: none;"><p>stuff 3</p></div>
+                    <div id="fireworks" style="display: none;"><p>stuff 4</p></div>
+
+                </div>
                 <div id="background">
                     <div class="glowing_stars">
                         <div class="star"></div>
@@ -50,17 +66,17 @@
                         <img class="object_moon_close" src="http://salehriaz.com/404Page/img/moon.svg" width="23%">
                     </div>
                 </div>
+                <footer id="footer-desktop", class="bottom-div">
+                    <div id="footer" class="flex-container">
+                            <div><a href="https://www.github.com/mikecerc" target="_blank" class="social-footer-icons"><i class="fa fa-github" aria-hidden="true"></i></a></div>
+                            <div><a href="https://www.github.com/mikecerc" target="_blank" class="social-footer-icons"><i class="fa fa-envelope" aria-hidden="true"></i></a></div>
+                            <div><a href="https://www.github.com/mikecerc" target="_blank" class="social-footer-icons"><i class="fa fa-file-word-o" aria-hidden="true"></i></a></div>
+                    </div>
+                    <div class="social-footer-left">
+    
+                    </div>
+                </footer>
             </div>
-            <footer id="footer-desktop", class="bottom-div">
-                <div id="footer" class="flex-container">
-                        <div><a href="https://www.github.com/mikecerc" target="_blank" class="social-footer-icons"><i class="fa fa-github" aria-hidden="true"></i></a></div>
-                        <div><a href="https://www.github.com/mikecerc" target="_blank" class="social-footer-icons"><i class="fa fa-envelope" aria-hidden="true"></i></a></div>
-                        <div><a href="https://www.github.com/mikecerc" target="_blank" class="social-footer-icons"><i class="fa fa-file-word-o" aria-hidden="true"></i></a></div>
-                </div>
-                <div class="social-footer-left">
-
-                </div>
-            </footer>
         </div>
     </body>
 </html>
