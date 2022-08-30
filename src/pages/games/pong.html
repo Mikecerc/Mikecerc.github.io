@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+        <link rel="stylesheet" href="../../styles/pong.css" />
+        <script src="../../js/pong/pong.js"></script>
+        <title>Pong!</title>
+    </head>
+    <body class="bg-purple">
+        <div class="content">
+            <div id="game" style="display: none;">
+                <div class="score">
+                    <div id="player-score">0</div>
+                    <div id="computer-score">0</div>
+                </div>
+                <div class="home-button"><a href="../games.html" target="_self" class="home-button-text">Go back</a></div>
+                <div class="ball" id="ball"></div>
+                <div class="paddle left" id="player-paddle"></div>
+                <div class="paddle right" id="computer-paddle"></div>
+            </div>
+            <div id="start-menu" style="display:block">
+                <div class="card">
+                    <h2>Pong!</h2>
+                    <div class="difficulty">
+                        <p>Click here to select the difficulty</p>
+                        <div class="flex">
+                            <div><button class="button button-selected" id="diff-button1" type="button" onclick="return diffButton(1)">Easy</button></div>
+                            <div><button class="button" id="diff-button2" type="button" onclick="return diffButton(2)">Hard</button></div>
+                            <div><button class="button" id="diff-button3" type="button" onclick="return diffButton(3)">Bonkers</button></div>
+                        </div>
+                    </div>
+                    <div class="start">
+                        <p>Click to start</p>
+                        <button class="button" id="start-button" type="button" onclick="return startGame()">Start!</button>
+                    </div>
+                    <div class="return-to-games">
+                        <a href="../games.html" target="_self" class="home-button-text" style="right:1%">Go back</a>
+                    </div>
+                </div>
+            </div>
+            <div id="lose" style="display:none">
+                <div class="card">
+                    <h2>You Lose!</h2>
+                    <div class="flex">
+                        <div><a class="end-link" href="./pong.html" target="_self">Play Again</a></div>
+                        <div><a class="end-link" href="../games.html" target="_self" >Go back</a></div>
+                    </div>
+                </div>
+            </div>
+            <div id="win" style="display:none">
+                <div class="card">
+                    <h2>You Win!</h2>
+                    <div class="flex">
+                        <div><a class="end-link" href="./pong.html" target="_self">Play Again</a></div>
+                        <div><a class="end-link" href="../games.html" target="_self" >Go back</a></div>
+                    </div>
+                </div>
+            </div>
+            <div id="background">
+                <div class="glowing_stars">
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                    <div class="star"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

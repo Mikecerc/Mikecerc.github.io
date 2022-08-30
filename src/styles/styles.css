@@ -367,3 +367,12 @@ a {
     display: block;
     border-bottom: 3px solid rgba(200, 200, 200, 40)
 }
+.games-button {
+    text-decoration: none;
+    border: 3px solid white;
+    padding: 5px 10px
+}
+
+.games-button:hover {
+    background-color: rgba(50, 50, 50, 40);
+}
