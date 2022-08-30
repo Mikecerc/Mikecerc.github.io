@@ -25,7 +25,7 @@
 }
 html {
     scrollbar-width: none;
-    overflow-y: scroll;
+    overflow-y: scroll; 
     margin: 0;
     width: 100%;
     font-family: 'Dosis', sans-serif;
@@ -41,7 +41,7 @@ html {
 }
 .page {
  position: relative;   
- min-height: 98vh;
+ min-height: 100vh;
 }
 .content {
    padding-bottom: 2.5rem
@@ -292,7 +292,7 @@ li a:hover {
     box-shadow: 0 0 20px 0;
     background: inherit;
     backdrop-filter: blur(25px);
-    margin: 15%;
+    margin:10%;
     padding-top: 1rem;
     text-align: center;
     padding-bottom:2rem;
@@ -308,13 +308,13 @@ li a:hover {
     display:flex;
     align-items: center;
     justify-content: center;
-    margin: auto;
+    margin: auto
     
   }
   .social-footer-icons {
     color: white;
     font-size: 20px;
-    padding: 15px;
+    padding: 0px 15px;
   }
   .social-footer-icons .fa:hover {
     color: #4a4a4a;
