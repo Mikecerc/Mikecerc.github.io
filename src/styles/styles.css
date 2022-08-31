@@ -40,7 +40,7 @@ html {
 }
 .page {
  position: relative;   
- min-height: 100vh;
+ min-height: 97.5vh;
 }
 .content {
    padding-bottom: 2.5rem
