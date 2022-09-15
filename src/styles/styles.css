@@ -23,14 +23,24 @@
     transition: ease 200s !important;
     transform: rotate(-3600deg) !important;
 }
+
 html {
-    scrollbar-width: none;
     overflow-y: scroll; 
     margin: 0;
     width: 100%;
     font-family: 'Dosis', sans-serif;
     font-weight: 300;
 }
+/* Hide scrollbar for Chrome, Safari and Opera */
+html::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+html {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
 .bg-purple{
     background: url(../images/bg_purple.png);
     background-repeat: repeat-x;
