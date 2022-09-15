@@ -2,7 +2,7 @@
 /pages/aboutme/* /404.html
 /pages/construction/* /404.html
 /pages/projects/* /404.html
-/pages/resume./* /404.html
+/pages/resume/* /404.html
 /pages/docs/batteryLog/* /404.html
 /pages/docs/batteryMonitoring/* /404.html
 /pages/docs/discordBots/* /404.html 
@@ -10,7 +10,7 @@
 /index/* /404
 
 */index.html /
-*/aboutMe.html /pages/aboutme
+*/aboutMe.html /pages/aboutMe
 */projects.html /pages/projects
 */batteryLog.html /pages/docs/batteryLog
 */batteryMonitoring.html /pages/docs/batteryMonitoring
